@@ -414,3 +414,9 @@ textarea {
 }
 
 
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .justify-content-end {
+      top: 60%; /* Adjust this value to increase/decrease top margin */
+      transform: translateY(-60%); /* Update transform accordingly */
+  }
+}

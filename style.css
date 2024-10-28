@@ -1,6 +1,4 @@
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -13,14 +11,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px; /* Adjust padding for spacing */
+  padding: 15px 30px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 9999;
 }
 
 .header-logo .logo {
-  height: 50px; /* Adjust logo size as necessary */
+  height: 50px;
 }
 
 .header-nav ul {
@@ -33,161 +31,117 @@
 
 .header-nav li a {
   text-decoration: none;
-  color: #000; /* Customize as needed */
+  color: #000;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .header-nav li a:hover {
-  color: #ff4954; /* Change color on hover */
+  color: #4a90e2;
 }
 
-/* Offset for header height to avoid overlapping */
 body {
   padding-top: 80px;
 }
 
-
-.company_name{
+.company_name {
   margin: 5%;
   color: #fff;
   font-size: 52px;
   font-weight: 700;
-  text-transform: none;
   line-height: 68px;
-  letter-spacing: 0px;
 }
+
 .hero-section {
-  background: linear-gradient(360deg, #ff4954, #f2295b);
+  background: linear-gradient(360deg, #4a90e2, #2a6fdb); /* Blue gradient */
   color: #fff;
-  /* margin-bottom: 40px; */
 }
 
 .img-container {
   background-color: #fff;
   padding: 20px;
-  /* margin-left: 15px; */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
+
 .container {
   margin-left: 3%;
-  /* margin-bottom: 10%; */
-}
-.f {
-  font-size: 52px;
 }
 
 .img_logo {
   margin: 0 15px;
   width: 100px;
-  transition: transform 0.3s ease-in-out; /* Animation effect */
+  transition: transform 0.3s ease-in-out;
 }
 
 .img_logo:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(1.1);
 }
-
-/* .Membership_Accolades h3 {
-  margin: 0 0 20px;
-  color: #554f67;
-}
-
-
-.member_images {
-  margin-top: 3%;
-}
-.Membership_Accolades {
-  margin: 5%;
-} */
 
 .intro {
   color: #fff;
   font-size: 52px;
   font-weight: 700;
-  text-transform: none;
   line-height: 68px;
-  letter-spacing: 0px;
 }
 
 .features_head h2 {
   color: #000;
   font-size: 54px;
   font-weight: 700;
-  line-height: 74px;
-  letter-spacing: 0px;
   text-align: center;
 }
 
 .feature_details {
   display: flex;
   gap: 10%;
+  margin: 5px;
 }
 
 .feature_title {
   margin-bottom: 15px;
-  color: #ff4954;
-  font-family: "Poppins", Sans-serif;
+  color: #4a90e2;
   font-size: 36px;
   font-weight: 600;
-  text-transform: none;
-  line-height: 46px;
-  letter-spacing: 0px;
 }
 
 .number-span {
   font-weight: 600;
   height: 60px;
   width: 60px;
-  border: none;
   border-radius: 100px;
   display: inline-block;
-  vertical-align: middle;
-  box-shadow: 0 0 4px #ff4954;
   text-align: center;
   line-height: 62px;
   margin-right: 10px;
   background: #fff;
-  font-family: "Poppins", Sans-serif;
   font-size: 36px;
   margin-top: -10px;
 }
 
 .feature_description {
   color: #000;
-  font-family: "Poppins", Sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
 }
 
-.feature_details {
-  margin: 5px;
-}
-
-.feature_text {
-  margin-bottom: 10px;
-}
-
-.title {
-  margin: 5%;
-}
-
 .features {
-  background-color: #fff4f4;
-  margin-top:5px;
+  background-color: #f0f8ff;
+  margin-top: 5px;
 }
+
 .reason_header {
   text-align: center;
 }
+
 .reason_header h2 {
   color: #000;
   font-size: 54px;
   font-weight: 700;
   line-height: 80px;
-  letter-spacing: 0px;
 }
 
 .reasons {
@@ -198,7 +152,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 0.3fr);
   gap: 40px;
-  /* padding: 30px 50px; */
   justify-items: center;
 }
 
@@ -206,8 +159,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   width: 350px;
-  background: transparent;
-  background-image: linear-gradient(360deg, #ff4954 0%, #f2295b 100%);
+  background: linear-gradient(360deg, #4a90e2, #2a6fdb); /* Blue gradient */
   border-radius: 20px;
   text-align: center;
   display: flex;
@@ -216,7 +168,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 0 10px;
   padding: 35px 2px 30px;
-  border-radius: 20px;
 }
 
 .reason-card img {
@@ -227,22 +178,20 @@ body {
 
 .reason-card h2 {
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  line-height: 1.3;
 }
 
 .reason-card p {
   color: #fff;
-  font-family: "Poppins", Sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
 }
+
 .fellow-publishers {
-  background-color: #fff4f4;
+  background-color: #f0f8ff;
 }
 
 .fellow_content {
@@ -255,10 +204,7 @@ body {
   color: #000;
   font-size: 54px;
   font-weight: 700;
-  text-transform: none;
-  font-style: normal;
   line-height: 74px;
-  letter-spacing: 0px;
   padding: 5%;
 }
 
@@ -266,13 +212,12 @@ body {
   width: 60.4%;
   padding: 20px 110px 94px;
 }
+
 .integration-container h1 {
   text-align: left;
   color: #554f67;
-  font-family: "Poppins", Sans-serif;
   font-size: 28px;
   font-weight: 500;
-  line-height: 38px;
   margin-bottom: 10%;
 }
 
@@ -284,6 +229,7 @@ body {
   margin-top: 30px;
   width: 100%;
 }
+
 .logo img {
   filter: grayscale(100%);
 }
@@ -292,57 +238,17 @@ body {
   filter: none;
 }
 
-/* .footer-section {
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #ff4954 0%, #f2295b 100%);
-  color: #fff;
-  font-family: "Poppins", Sans-serif;
-  font-size: 46px;
-  font-weight: 400;
-  text-transform: none;
-  line-height: 68px;
-  letter-spacing: 0px;
-}
-
-.footer-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.footer_text {
-  color: #fff;
-  font-family: "Poppins", Sans-serif;
-  font-size: 46px;
-  font-weight: 400;
-  text-transform: none;
-  line-height: 68px;
-  letter-spacing: 0px;
-}
-
-.row {
-  align-content: center;
-  align-items: center;
-} */
-
 .footer-section {
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #ff4954 0%, #f2295b 100%);
+  background: linear-gradient(180deg, #4a90e2, #2a6fdb); /* Blue gradient */
   color: #fff;
-  font-family: "Poppins", Sans-serif;
   font-size: 46px;
   font-weight: 400;
-  text-transform: none;
   line-height: 1.2;
-  letter-spacing: 0px;
   padding: 60px 0;
 }
 
 .footer_text p {
-  font-family: "Poppins", Sans-serif;
   font-size: 46px;
-  text-transform: none;
   line-height: 1.2;
   color: #fff;
 }
@@ -360,27 +266,17 @@ body {
 
 .copyright_text {
   color: #383838;
-  font-family: "Poppins", Sans-serif;
   font-size: 22px;
-  font-weight: 400;
-  text-transform: none;
   line-height: 33px;
 }
 
-.copyright_div {
-  margin: 5%;
-}
-
-
-
 .justify-content-end {
-  position: fixed; /* Make the entire form container fixed */
-  top: 50%; /* Center vertically */
-  right: 0; /* Stick to the right edge */
-  transform: translateY(-50%); /* Center vertically within the viewport */
-  width: 600px; /* Set a width for the form */
-  /* max-width: 400px; */
-  z-index: 1000; /* Ensure the form stays on top */
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 600px;
+  z-index: 1000;
 }
 
 .calendly-card {
@@ -404,20 +300,17 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(42, 111, 219, 0.5); /* Semi-transparent blue overlay */
   z-index: 999;
-  padding:30%;
+  padding: 30%;
 }
 
 textarea {
   resize: vertical;
 }
 
-
 @media (min-width: 1200px) and (max-width: 1440px) {
   .justify-content-end {
-      margin-top: 10%; /* Adjust this value to increase/decrease top margin */
-      /* transform: translateY(-60%); */
-}
-
+    margin-top: 10%;
+  }
 }

@@ -32,95 +32,94 @@
   
 <main >
 
-  <div>
-    <div class="d-flex justify-content-end align-items-center min-vh-100 p-4">
-        <div class="bg-white shadow-lg rounded-lg p-4 w-100" style="max-width: 500px;">
-            <h2 class="h4 font-weight-bold text-dark mb-2">Setup a Demo</h2>
-            <p class="text-muted mb-4">Free 30 Min Website Monetization Consulting Included</p>
+ <div>
+  <div class="d-flex justify-content-end align-items-center min-vh-90 p-4 mt-4">
+    <div class="bg-white shadow-lg rounded-lg p-4 w-100 mt-5" style="max-width: 500px;">
+        <h2 class="h4 font-weight-bold text-dark mb-2">Setup a Demo</h2>
+        <p class="text-muted mb-4">Free 30 Min Website Monetization Consulting Included</p>
 
-            <div id="successMessage" class="alert alert-success d-none" role="alert">
-                <strong>Success!</strong> Your request has been submitted successfully!
-            </div>
+        <div id="successMessage" class="alert alert-success d-none" role="alert">
+            <strong>Success!</strong> Your request has been submitted successfully!
+        </div>
 
-            <div id="errorMessage" class="alert alert-danger d-none" role="alert">
-                <strong>Error!</strong> There was an error submitting your request. Please try again.
-            </div>
+        <div id="errorMessage" class="alert alert-danger d-none" role="alert">
+            <strong>Error!</strong> There was an error submitting your request. Please try again.
+        </div>
 
-            <form id="dataForm" action="/submit" method="post">
-              <div class="form-group">
+        <form id="dataForm" action="/submit" method="post">
+            <div class="form-group">
                 <label for="firstname">First Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name" required>
                 <span id="nameError" class="text-danger d-none">Name should contain only alphabets.</span>
             </div>
-            
+
             <div class="form-group">
                 <label for="email">Email <span class="text-danger">*</span></label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
                 <span id="emailError" class="text-danger d-none">Please enter a valid email address.</span>
             </div>
-            
+
             <div class="form-group">
                 <label for="phone">Phone Number <span class="text-danger">*</span></label>
                 <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
                 <span id="phoneError" class="text-danger d-none">Phone number must be exactly 10 digits.</span>
             </div>
-            
+
             <div class="form-group">
                 <label for="website">Website</label>
                 <input type="text" class="form-control" id="website" name="website" placeholder="Website URL (optional)">
                 <span id="websiteError" class="text-danger d-none">Please enter a valid URL.</span>
             </div>
-            
 
-                <div class="form-group">
-                    <label for="service_offered">Service Offered <span class="text-danger">*</span></label>
-                    <select class="form-control" id="service_offered" name="service_offered" required>
-                        <option value="">Select a Service</option>
-                        <option value="MA/MI Integration">MA/MI Integration</option>
-                        <option value="Direct GPT / Video Tags">Direct GPT / Video Tags</option>
-                        <option value="Refresh single script solution">Refresh single script solution</option>
-                        <option value="Mobile INAPP SDK">Mobile INAPP SDK</option>
-                        <option value="Video Player tag">Video Player tag</option>
-                        <option value="Header Bidding">Header Bidding</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="monthly_ad_revenue">Monthly Ad Revenue <span class="text-danger">*</span></label>
-                    <select class="form-control" id="monthly_ad_revenue" name="monthly_ad_revenue" required>
-                        <option value="">Select any option</option>
-                        <option value="Less than 1,000 USD">Less than 1,000 USD</option>
-                        <option value="1,000 - 2,999 USD">1,000 - 2,999 USD</option>
-                        <option value="3,000 - 10,000 USD">3,000 - 10,000 USD</option>
-                        <option value="10,000 - 40,000 USD">10,000 - 40,000 USD</option>
-                        <option value="More than 40,000 USD">More than 40,000 USD</option>
-                    </select>
-
-
-                </div>
-
-                <div class="d-flex flex-column space-y-2 mt-4">
-                    <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
-                    <button type="button" id="scheduleMeetingButton" class="btn btn-primary mb-2">Schedule Meeting</button>
-
-                </div>
-            </form>
-
-          
-            <div id="loader" class="spinner-border text-primary d-none" role="status">
-              <div class="centered">
-                <span class="sr-only"></span>
+            <div class="form-group">
+                <label for="service_offered">Service Offered <span class="text-danger">*</span></label>
+                <select class="form-control" id="service_offered" name="service_offered" required>
+                    <option value="">Select a Service</option>
+                    <option value="MA/MI Integration">MA/MI Integration</option>
+                    <option value="Direct GPT / Video Tags">Direct GPT / Video Tags</option>
+                    <option value="Refresh single script solution">Refresh single script solution</option>
+                    <option value="Mobile INAPP SDK">Mobile INAPP SDK</option>
+                    <option value="Video Player tag">Video Player tag</option>
+                    <option value="Header Bidding">Header Bidding</option>
+                </select>
             </div>
+
+            <div class="form-group">
+                <label for="monthly_ad_revenue">Monthly Ad Revenue <span class="text-danger">*</span></label>
+                <select class="form-control" id="monthly_ad_revenue" name="monthly_ad_revenue" required>
+                    <option value="">Select any option</option>
+                    <option value="Less than 1,000 USD">Less than 1,000 USD</option>
+                    <option value="1,000 - 2,999 USD">1,000 - 2,999 USD</option>
+                    <option value="3,000 - 10,000 USD">3,000 - 10,000 USD</option>
+                    <option value="10,000 - 40,000 USD">10,000 - 40,000 USD</option>
+                    <option value="More than 40,000 USD">More than 40,000 USD</option>
+                </select>
+            </div>
+
+            <div class="d-flex flex-column space-y-2 mt-4">
+                <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+                <button type="button" id="scheduleMeetingButton" class="btn btn-primary mb-2">Schedule Meeting</button>
+            </div>
+        </form>
+
+        <div id="loader" class="spinner-border text-primary d-none" role="status">
+            <div class="centered">
+                <span class="sr-only"></span>
             </div>
         </div>
     </div>
-
-    <div class="overlay" id="overlay"></div>
-    <div class="calendly-card" id="calendlyCard">
-        <button id="closeCalendly" class="btn btn-light position-absolute" style="top: 10px; right: 10px;">✖</button>
-        <div class="calendly-inline-widget" data-url="https://calendly.com/d/cpnm-vdq-8hg/rtbdemand?month=2024-10" style="min-width:320px;height:630px;"></div>
-        <button id="doneScheduling" class="btn btn-primary mt-4 w-100">Done Scheduling</button>
-    </div>
 </div>
+
+<div class="overlay" id="overlay"></div>
+<div class="calendly-card" id="calendlyCard">
+    <button id="closeCalendly" class="btn btn-light position-absolute" style="top: 10px; right: 10px;">✖</button>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/d/cpnm-vdq-8hg/rtbdemand?month=2024-10" style="min-width:320px;height:530px;margin-top: 30px;"></div>
+    <button id="doneScheduling" class="btn btn-primary mt-4 w-100">Done Scheduling</button>
+</div>
+
+</div>
+
+
   
     <section class="hero-section">
         <div class="container col-xxl-8 px-4 py-5" >
@@ -170,7 +169,7 @@
           <p class="feature_description">Maximize competition for your ad inventory with premium ad networks including CPM ad networks and gain access to demand from top players like Google, Amazon, Xander, Index Exchange, etc.</p>
         </div>
         <div class="feature_image">
-            <img src="./src/images/New-Ad-Networks-1.png" width="211px" height="211px">
+            <img src="./src/images/viral-marketing.png" width="211px" height="211px">
         </div>
       </div>
 
@@ -180,7 +179,7 @@
           <p class="feature_description">AdPushup’s bundle size reduction ensures that ads do not affect the website's core web vitals.</p>
         </div>
         <div class="feature_image">
-            <img src="./src/images/Improved-Paged-Vitals.png" width="211px" height="211px">
+            <img src="./src/images/speed-radar.png" width="211px" height="211px">
         </div>
       </div>
 
@@ -190,7 +189,7 @@
           <p class="feature_description">Find out which ad networks earn the most for you and at what time of day- all in one dashboard.</p>
         </div>
         <div class="feature_image">
-            <img src="./src/images/360-Analytics-and-Reporting.png" width="211px" height="211px">
+            <img src="./src/images/report.png" width="211px" height="211px">
         </div>
       </div>
 
@@ -201,7 +200,7 @@
           <p class="feature_description">Diversify your revenue streams further with Adpushup. Utilize our unique ad formats, advanced targeting options, to maximize ad inventory potential and enhance your earnings.</p>
         </div>
         <div class="feature_image">
-            <img src="./src/images/image_2023_08_10T06_28_01_943Z-3-e1723121734849.png" width="211px" height="211px">
+            <img src="./src/images/adsense.png" width="211px" height="211px">
         </div>
       </div>
 
@@ -211,7 +210,7 @@
           <p class="feature_description">Amplify your ad revenue with access to the premium Supply Side Platforms, connecting you with a wide range of demand sources and high-quality advertisers.</p>
         </div>
         <div class="feature_image">
-            <img src="./src/images/image_2023_08_10T06_28_06_429Z-3.png" width="211px" height="211px">
+            <img src="./src/images/partner.png" width="211px" height="211px">
         </div>
       </div>
 
@@ -221,7 +220,7 @@
           <p class="feature_description">Results-driven ad ops team committed to skyrocketing your ad revenue. Best of all, our ad ops team is fueled by dedication, so you can be rest assured knowing you’re bound to have substantial growth.</p>
         </div>
         <div class="feature_image">
-            <img src="./src/images/networking-1-1-150x150.png" width="211px" height="211px">
+            <img src="./src/images/partners.png" width="211px" height="211px">
         </div>
       </div>
     </div>
@@ -343,7 +342,7 @@
             </p>
           </div>
           <div class="col-md-6 text-center">
-              <img src="./src/images/footer.png" alt="Footer Image">
+              <!-- <img src="./src/images/footer.png" alt="Footer Image"> -->
           </div>
       </div>
   </div>

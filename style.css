@@ -414,9 +414,13 @@ textarea {
 }
 
 
-/* Default padding for larger screens */
-body {
-  padding-top: 80px; /* Offset for the header height */
+.d-flex.justify-content-end {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  right: 0;
+  transform: translateY(-50%);
+  width: 600px;
+  z-index: 1000;
 }
 
 /* Reduce padding for smaller screens */

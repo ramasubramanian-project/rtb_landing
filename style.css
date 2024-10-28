@@ -373,7 +373,7 @@ body {
 
 
 
-.d-flex.justify-content-end {
+.justify-content-end {
   position: fixed; /* Make the entire form container fixed */
   top: 50%; /* Center vertically */
   right: 0; /* Stick to the right edge */
@@ -413,3 +413,49 @@ textarea {
   resize: vertical;
 }
 
+
+/* Default padding for larger screens */
+body {
+  padding-top: 80px; /* Offset for the header height */
+}
+
+/* Reduce padding for smaller screens */
+@media (max-width: 1400px) {
+  body {
+    padding-top: 100px; /* Increase padding to prevent overlap */
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-top: 120px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .d-flex.justify-content-end {
+    top: 55%; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .d-flex.justify-content-end {
+    top: 60%; /* Move down further for overlap prevention */
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .fixed-header {
+    padding: 10px 15px; /* Reduce padding to make the header less tall */
+  }
+
+  .header-logo .logo {
+    height: 40px; /* Reduce logo size */
+  }
+
+  .header-nav li a {
+    font-size: 0.9rem; /* Reduce font size of nav links */
+  }
+}
